@@ -1,0 +1,271 @@
+*{
+margin: 0;
+padding: 0
+}
+
+#container {
+width: 150px;
+margin: 0 auto;
+position: relative;
+}
+
+#button1{
+width: 150px;
+height: 30px;
+}
+
+input[type=checkbox]{
+visibility: hidden;
+position: absolute;
+}
+
+label{
+display: block;
+width: 150px;
+height: 30px;
+margin: 20px auto;
+background-color: red;
+text-align: center;
+border-radius: 0 4px 4px 0;
+position: relative;
+background-image: -webkit-linear-gradient(#991010, #830808);
+background-image: -moz-linear-gradient(#991010, #830808);
+background-image: -o-linear-gradient(#991010, #830808);
+background-image: -ms-linear-gradient(#991010, #830808);
+background-image: linear-gradient(#991010, #830808);
+box-shadow: 0 1px 2px #727272;
+cursor: pointer;
+}
+
+.light, .light2, .light3{
+top:1px;
+height: 1px;
+position: absolute;
+width: 100%;
+background-color:black;
+background: -webkit-linear-gradient(left top, rgba(255,255,255,0.0), rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0));
+	background: -moz-linear-gradient(left top, rgba(255,255,255,0.0), rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0));
+	background: -ms-linear-gradient(left top, rgba(255,255,255,0.0), rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0));
+	background: -o-linear-gradient(left top, rgba(255,255,255,0.0), rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0));
+	background: linear-gradient(left top, rgba(255,255,255,0.0), rgba(255,255,255,0.6) 35%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0));
+}
+
+.light3{
+width: 150px;
+left: -2px;
+}
+
+span{
+line-height: 30px;
+color: white;
+font-size: 12px;
+font-family: Verdana;
+font-weight: bold;
+}
+
+.thanks{
+position: absolute;
+top: 0;
+left: 151px;
+visibility:hidden;
+transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#arrow{
+background: black;
+top: 0px;
+left: -31px;
+width: 30px;
+position: absolute;
+height: 30px;
+border-radius: 4px 0 0 4px;
+cursor: pointer;
+background-image: -webkit-linear-gradient(#3d3d3d, #202020);
+background-image: -moz-linear-gradient(#3d3d3d, #202020);
+background-image: -o-linear-gradient(#3d3d3d, #202020);
+background-image: -ms-linear-gradient(#3d3d3d, #202020);
+background-image: linear-gradient(#3d3d3d, #202020);
+box-shadow: 0 1px 2px #727272;
+transition: all .4s  ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-webkit-transition: all .4s  ease-in-out;
+-o-transition: all .4s  ease-in-out;
+-ms-transition: all .4s  ease-in-out;
+}
+
+#arrow .arrow-after{
+content: "";
+position: absolute;
+top: 5px;
+left: 13px;
+width: 8px;
+height: 10px;
+background-color: white;
+-moz-transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transition: all .4s ease-in-out;
+-moz-transition: all .4s  ease-in-out;
+-webkit-transition: all .4s  ease-in-out;
+-o-transition: all .4s  ease-in-out;
+-ms-transition: all .4s  ease-in-out;
+-moz-transform-origin: bottom;
+-webkit-transform-origin: bottom;
+-o-transform-origin: bottom;
+-ms-transform-origin: bottom;
+}
+
+#arrow .arrow-before{
+content:"";
+position: absolute;
+top: 15px;
+left: 10px;
+border-left: 7px solid transparent;
+border-right: 7px solid transparent;
+border-top: 8px solid white;
+-moz-transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transition: all .4s  ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-webkit-transition: all .4s  ease-in-out;
+-o-transition: all .4s  ease-in-out;
+-ms-transition: all .4s  ease-in-out;
+-moz-transform-origin: top;
+-webkit-transform-origin: top;
+-o-transform-origin: top;
+-ms-transform-origin: top;
+}
+
+#button1:hover #arrow .arrow-before, #button1:hover #arrow  .arrow-after, input[type=checkbox]:checked~#arrow .arrow-before, input[type=checkbox]:checked~#arrow  .arrow-after{
+-moz-transform: rotate(0deg);
+-webkit-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+-ms-transform: rotate(0deg);
+left: 11px;
+top:6px
+}
+
+#button1:hover #arrow .arrow-before, input[type=checkbox]:checked~#arrow .arrow-before{
+left: 8px;
+top: 16px;
+}
+
+#hover{
+width: 70px;
+height:0;
+position: absolute;
+top:30px;
+left: 42px;
+z-index: -1;
+background-image: -moz-linear-gradient(#202020, #3d3d3d);
+background-image: -webkit-linear-gradient(#202020, #3d3d3d);
+background-image: -o-linear-gradient(#202020, #3d3d3d);
+background-image: -ms-linear-gradient(#202020, #3d3d3d);
+background-image: linear-gradient(#202020, #3d3d3d);
+box-shadow: inset 0 1px 1px #1c1c1c, 0 1px 1px #6f6f6f;
+border-radius: 0 0px 4px 4px;
+transition: height 0.5s ease-in-out;
+-moz-transition: height 0.5s ease-in-out;
+-webkit-transition: height 0.5s ease-in-out;
+-o-transition: height 0.5s ease-in-out;
+-ms-transition: height 0.5s ease-in-out;
+}
+
+.light2{
+top:19px;
+width: 45px;
+}
+
+.opacity{
+position: absolute;
+left: 25px;
+transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+#hover span{
+position: absolute;
+top: -8px;
+left: 20px;
+color: white;
+}
+
+#img .img-before{
+border-radius: 20px;
+content:"";
+height: 5px;
+position: absolute;
+left: 5px;
+top: 6px;
+width: 2px;
+background:black;
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+#img .img-after{
+border-radius: 20px;
+content:"";
+height: 7px;
+left: 8px;
+top:4px;
+width: 2px;
+position: absolute;
+background-color: black;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+#img{
+ border-radius: 100%;
+height: 15px;
+width: 15px;
+position: absolute;
+top: -20px;
+left: 12px;
+background-image: -webkit-radial-gradient(50% 50%, ellipse closest-side, #c7c7c7, #fff 90%);
+background-image:    -moz-radial-gradient(50% 50%, ellipse closest-side, #c7c7c7, #fff 90%);
+background-image:     -ms-radial-gradient(50% 50%, ellipse closest-side, #c7c7c7, #fff 90%);
+background-image:      -o-radial-gradient(50% 50%, ellipse closest-side, #c7c7c7, #fff 90%);
+background-image:         radial-gradient(50% 50%, ellipse closest-side, #c7c7c7, #fff 90%);
+box-shadow: inset 0 1px 2px #575757;
+transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+}
+
+input[type=checkbox]:checked~#hover{
+height:25px;
+}
+
+input[type=checkbox]:checked~#hover #img {
+top: 5px;
+}
+
+input[type=checkbox]:checked~#label .opacity{
+left: -100px;
+visibility:hidden;
+}
+
+input[type=checkbox]:checked~#label .thanks{
+visibility: visible;
+left: 48px;
+}
